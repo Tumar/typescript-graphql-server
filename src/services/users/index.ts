@@ -1,4 +1,5 @@
 import bcrypt from 'bcryptjs';
+import {RESOLVER} from 'awilix';
 
 import User from "src/models/User";
 import { generatePassword } from 'src/util/bcrypt';
@@ -9,6 +10,10 @@ interface CreateUserInput {
 }
 
 export default class UsersService {
+  static [RESOLVER] = {
+    name: 'usersService'    
+  }
+
   async findById(userId: number): Promise<User | null> {
     return User.query().findById(userId);
   }
