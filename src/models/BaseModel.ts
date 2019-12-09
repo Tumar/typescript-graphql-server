@@ -1,6 +1,6 @@
 import {Model, QueryContext} from 'objection';
 
-import {knex} from '../util/knex';
+import {knex} from 'src/util/knex';
 
 interface ModelOptions {
     autoUpdatedColumns?: ('createdAt' | 'updatedAt')[]

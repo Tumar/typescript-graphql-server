@@ -1,6 +1,6 @@
-import UsersService from "../../services/users";
-import { comparePasswords } from "../../util/bcrypt";
-import { guardUser } from "../../util/auth";
+import UsersService from "src/services/users";
+import { comparePasswords } from "src/util/bcrypt";
+import { guardUser } from "src/util/auth";
 
 interface SignUpArgs {
     input: {

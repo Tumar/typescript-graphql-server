@@ -1,8 +1,8 @@
 import express from 'express';
 import passport from 'passport';
 
-import User from '../models/User';
-import UsersService from '../services/users';
+import User from 'src/models/User';
+import UsersService from 'src/services/users';
 
 export const createAuthenticationMiddleware = ({usersService}: {usersService: UsersService}) => {
     const authenticator = new passport.Authenticator();

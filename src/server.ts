@@ -5,7 +5,8 @@ import RedisStore from 'connect-redis';
 import { ApolloServer } from 'apollo-server-express';
 import { AwilixContainer } from 'awilix';
 
-import User from './models/User';
+import User from 'src/models/User';
+
 import resolvers from './resolvers';
 import typeDefs from './typedefs';
 import { container } from './util/container';

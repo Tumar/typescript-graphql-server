@@ -1,4 +1,4 @@
-import User from "../models/User";
+import User from "src/models/User";
 
 export const guardUser = (user: User | undefined | null) => {
     if (!user) {

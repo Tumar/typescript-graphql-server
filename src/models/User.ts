@@ -1,7 +1,7 @@
 import {Model, JSONSchema} from 'objection';
 
 import { createBaseModel } from './BaseModel';
-import { Users } from '../__generated/osm';
+import { Users } from 'src/__generated/osm';
 
 export default class User extends createBaseModel<Users>({
     autoUpdatedColumns: ['createdAt', 'updatedAt']

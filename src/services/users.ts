@@ -1,7 +1,7 @@
 import bcrypt from 'bcryptjs';
 
-import User from "../models/User";
-import { generatePassword } from '../util/bcrypt';
+import User from "src/models/User";
+import { generatePassword } from 'src/util/bcrypt';
 
 interface CreateUserInput {
     email: string;

@@ -6,6 +6,6 @@ RUN yarn build
 
 FROM node:12.13.1-alpine
 WORKDIR /usr/app
-COPY package.json ./
-COPY --from=0 /usr/app/dist dist
+COPY package.json tsconfig.json ./
+COPY --from=0 /usr/app/dist src
 COPY --from=0 /usr/app/node_modules node_modules
